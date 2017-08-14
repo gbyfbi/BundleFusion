@@ -52,7 +52,10 @@ void PrimeSenseSensor::createFirstConnected()
 	std::cout << "After initialization: " << openni::OpenNI::getExtendedError() << std::endl;
 
 	// Create Device
-	rc = m_device.open("../data/readingroom.oni");//m_device.open(deviceURI);
+	//rc = m_device.open("../data/readingroom.oni");//m_device.open(deviceURI);
+	rc = m_device.open(deviceURI);
+	
+
 	if (rc != openni::STATUS_OK)
 	{
 		std::cout << "Device open failed: " << openni::OpenNI::getExtendedError() << std::endl;

@@ -21,7 +21,9 @@ public:
 
 	//! Constructor; allocates CPU memory and creates handles
 	PrimeSenseSensor();
-
+	std::string getSensorName() const {
+		return std::string("xtion");
+	}
 	//! Destructor; releases allocated ressources
 	~PrimeSenseSensor();
 
